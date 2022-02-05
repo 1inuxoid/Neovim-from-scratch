@@ -67,3 +67,11 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
+
+keymap("n", "<C-A-l>", ":Format<CR>", opts)
+
+-- mapping for traversing the Vim's list
+keymap("n", "[b", ":bprevious<CR>", opts)
+keymap("n", "]b", ":bnext<CR>", opts)
+keymap("n", "[B", ":bfirst<CR>", opts)
+keymap("n", "]B", ":blast<CR>", opts)
